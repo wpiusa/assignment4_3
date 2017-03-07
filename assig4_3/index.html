@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: Box;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-iteration-count: 2;
+     -webkit-animation-fill-mode: forwards;
+    /* Standard syntax */
+    animation-name: Box;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+   
+}
+#boxlable{
+    padding: 10px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes Box {
+    0%   {background-color:green; left:0px; top:0px;}
+    25%  {background-color:orange; left:200px; top:0px;border-radius: 30px;}
+    50%  {background-color:orange; left:200px; top:200px;border-radius: 40px;}
+    75%  {background-color:orange; left:0px; top:200px;border-radius: 50px;}
+    100% {background-color:orange; left:0px; top:0px; border-radius: 60px;}
+}
+
+
+
+
+
+/* Standard syntax */
+@keyframes Box {
+    0%   {background-color:green; left:0px; top:0px;}
+    25%  {background-color:orange; left:200px; top:0px;}
+    50%  {background-color:orange; left:200px; top:200px;}
+    75%  {background-color:orange; left:0px; top:200px;}
+    100% {background-color:orange; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<div id="boxlable"><span >Box</span></div>
+
+</body>
+</html>
